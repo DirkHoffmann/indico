@@ -1,3 +1,6 @@
+.. _submitters_guide:
+
+
 =================
 Submitter's Guide
 =================

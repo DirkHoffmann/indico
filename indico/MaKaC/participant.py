@@ -643,7 +643,7 @@ on behalf of %s %s
             """ TODO: Prepate URLs..!! """
 
             choseURL = ">>must be prepared yet..!!<<"
-            data["subject"] = _("Negotiation algorithm finished - SUCCSEEDED")
+            data["subject"] = _("Negotiation algorithm finished - SUCCEEDED")
             toList = []
             for manager in self._conference.getManagerList() :
                 if isinstance(manager, Avatar) :
@@ -654,13 +654,13 @@ on behalf of %s %s
 
             negotiation algorithm has finished its work on finding the date for %s,
             now you are kindly requested to choose the most siutable date from
-            the list of solution which is avaliable at %s
+            the list of solutions which is avaliable at %s
 
             Your Indico
             """)%(self._conference.getTitle(), choseURL)
 
         else :
-            data["subject"] = _("Date of the %s setteled")%self._conference.getTitle()
+            data["subject"] = _("Date of the %s settled")%self._conference.getTitle()
             toList = []
             for p in self._participantList.valuess() :
                 toList.append(p.getEmail())
@@ -668,7 +668,7 @@ on behalf of %s %s
             data["body"] = _("""
             Dear Participant,
 
-            negotiation algorithm has just set the date of the %s to :
+            negotiation algorithm has just set the date of the %s to:
                 start date : %s
                 end date   : %s
 
