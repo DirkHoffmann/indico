@@ -10,6 +10,7 @@ Installation / Configuration
    :numbered:
 
    installation.rst
+   browsers.rst
 
 ===
 API
