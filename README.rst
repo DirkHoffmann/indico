@@ -14,7 +14,8 @@ The Indico software was originally developed in the framework of the EU
 InDiCo project. Nowadays, Indico is a free software licensed under terms
 of GNU General Public License (GPL) v3.
 
-Indico is currently in production at  CERN at  http://indico.cern.ch.
+Indico is currently in production at  CERN at  http://indico.cern.ch and 
+more than hundred other institutional servers worldwide.
 You are welcome to have a look at the set of features, and subscribe to
 the mailing lists in order to be kept informed about future releases.
 
