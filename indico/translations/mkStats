@@ -1,0 +1,8 @@
+#!/bin/sh 
+
+for l in indico/translations/[a-jn-z]*
+	do basename $l
+		for r in $l/LC*/m*po; do echo $(basename $l)::$(basename $r) $(grep msgid\  $r| wc -l) msgid $(grep msgid_plu $r | wc -l) msgid_plural $(grep msgstr $r | grep -v '""' | wc -l) done ; 
+		done
+	done
+
