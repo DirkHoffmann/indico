@@ -1,0 +1,17 @@
+#!/bin/sh 
+
+if [ -d indico/translations ]; then
+	PRE=indico/translations
+fi
+
+for l in ./$PRE/[a-jn-z]*
+	do 
+		if [ ! -d $l/LC_MESSAGES ]; then
+			continue
+		fi
+		basename $l
+		for r in $l/LC*/m*po; do 
+			echo $(basename $l)::$(basename $r) $(grep msgid\  $r| wc -l) msgid $(grep msgid_plu $r | wc -l) msgid_plural $(grep msgstr $r | grep -v '""' | wc -l) 
+		done 
+	done
+
